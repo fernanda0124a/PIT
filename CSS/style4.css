@@ -1,0 +1,395 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #D7D7D7;
+    color: #2EAD97;
+    display: grid;
+    grid-auto-columns: 1fr 2fr 1fr;
+    grid-template-areas: "Parte1 Parte2 Parte3";
+    gap: 10px;
+    height: 140px;
+}
+
+#Part1 {
+    grid-area: Parte1;
+    height: 140px;
+}
+
+#LogoTipo {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+#Lado {
+    transform: rotate(45deg);
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 4px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#Imagens {
+    width: 100px;
+    height: 100px;
+    margin-top: -116px;
+    margin-left: 230px;
+}
+
+#Medicamento1 {
+    width: 140px;
+}
+
+#Medicamento2 {
+    width: 80px;
+    position: absolute;
+    margin-top: -138px;
+    margin-left: 70px;
+}
+
+#Pesquisa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-area: Parte2;
+    height: 140px;
+}
+
+#BarraPesquisa {
+    width: 80%;
+    border-radius: 30px;
+    height: 20px;
+    margin-left: 8%;
+    padding: 20px;
+    border: none;
+}
+
+#Lupa {
+    width: 40px;
+    height: 40px;
+}
+
+form {
+    grid-area: Parte3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-button {
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    color: #2EAD97;
+    background-color: transparent;
+    font-weight: bold;
+    background-color: #D7D7D7;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content input[type="submit"] {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    gap: 30px;
+    color: #2EAD97;
+    font-weight: bold;
+    cursor: pointer;
+}
+#Voltar{
+    background: transparent;
+    border: none;
+    color: #2EAD97;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.su:hover {
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    background-color: #2E2E2E;
+    color: white;
+}
+#Container{
+    display: flex;
+    flex-direction: column;
+}
+#ContainerP2{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+#Tempo{
+    width: 300px;
+}
+#Dados{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "dados1 dados1"
+    "dados2 tempo1"
+    "dados3 tempo2"
+    "dados4 tempo3";
+}
+#Cor{
+    color: #ED6C6C;
+}
+#dados1{
+    grid-area: dados1;
+}
+#dados2{
+    grid-area: dados2;
+}
+#dados3{
+    grid-area: dados3;
+}
+#dados4{
+    grid-area: dados4;
+}
+#tempo1{
+    grid-area: tempo1;
+    margin-left: 10%;
+    width: 80px;
+    height: 24px;
+    background-color: #457A2B;
+    color: #BEB8B8;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+#tempo2{
+    grid-area: tempo2;
+    margin-left: 10%;
+    width: 80px;
+    height: 24px;
+    background-color: #3F2020;
+    color: #BEB8B8;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+#tempo3{
+    grid-area: tempo3;
+    margin-left: 10%;
+    width: 80px;
+    height: 24px;
+    background-color: #100F0F;
+    color: #BEB8B8;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+#Medicamentos{
+    background-color: #272121;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 46%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#ContainerP1{
+    background-color: #D9D9D9;
+    display: flex;
+    color: #5F5252;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#MocaRemedios{
+    width: 300px;
+    height: 300px;
+}
+#Texto1{
+    margin-left: 16%;
+}
+#Comprimidos2{
+    width: 400px;
+    height: 300px;
+    margin-left: 108.8%;
+    margin-right: 0px;
+    margin-top: 4px;
+}
+
+#ContainerP3{
+    background-color: #DDDDDD;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    display: grid;
+    grid-auto-columns: 1fr 2fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Barra1 Barra2"
+    "Barra1 Barra3"
+    "Barra1 Barra4";
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#Barracinza{
+    width: 130px;
+    background-color: #C8C8C8;
+    margin-left: 10px;
+    text-align: center;
+    grid-area: Barra1;
+    padding: 10px;
+}
+#Barracinza li{
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+li {
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 26px;
+    margin-top: 10px;
+    text-align: center;
+}
+#Barracinza3  h4{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+#Barracinza4  h4{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+#Barracinza2{
+    display: flex;
+    background-color: #C8C8C8;
+    width: 80%;
+    margin-left: 16%;
+    grid-area: Barra2;
+}
+
+#imagemList{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Pilula {
+    width: 80px;
+    height: 80px;
+}
+#Pquantidade{
+    color: #417A7D;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+#Barracinza3{
+    display: flex;
+    background-color: #C8C8C8;
+    width: 80%;
+    margin-left: 16%;
+    grid-area: Barra3;
+}
+#Barracinza4{
+    display: flex;
+    background-color: #C8C8C8;
+    width: 80%;
+    margin-left: 16%;
+    grid-area: Barra4;
+}
+
+#ImgMediqueSe{
+    width: 60%;
+    margin-left: 16%;
+    margin-bottom: 10px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+#Links ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+#Links li {
+    margin-right: 40px;
+    margin-left: 10px;
+    background-color: #DCDCDC;
+    font-size: 16px;
+}
+
+#Links a {
+    text-decoration: underline #7B6C6C;
+    color: #7B6C6C;
+    background-color: #FFFFFF;
+}
+
+#IconsFoot {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-start;
+}
+
+#IconsFoot img {
+    margin-top: 10px;
+}
+
+#IconInsta {
+    width: 50px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+}
+
+#IconTikTok {
+    width: 70px;
+    height: 40px;
+    position: relative;
+    top: -24px;
+}
+
+#IconPinterest {
+    width: 60px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+}
+
+#IconTwitter {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    top: -24px;
+}
