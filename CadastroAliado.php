@@ -67,7 +67,7 @@ if(isset($_POST["Voltar"])){
                     <img src="IMG/Celular.png" id="ImgCell">
                 </div>
                 <div id="InfotxtCpf">
-                    <input type="text" name="cpf" id="Cpf" oninput="mascara_CPF()" maxlength="14">
+                    <input type="text" name="Cpf" id="Cpf" oninput="mascara_CPF()" maxlength="14">
                     <p></p>
                 </div>
                 <div id="InfotxtDTN">
@@ -75,13 +75,13 @@ if(isset($_POST["Voltar"])){
                     <p></p>
                 </div>
                 <div id="InfotxtCell">
-                    <input type="text" name="Celular" id="Cell" oninput="mascara_Cell()" maxlength="14">
+                    <input type="text" name="Cell" id="Cell" oninput="mascara_Cell()" maxlength="14">
                     <p></p>
                 </div>
             </div>
             <div class="SubContainer">
                 <p>Cep:</p>
-                <input type="text" name="Cep" id="cep" oninput="mascara_cep()" maxlength="9">
+                <input type="text" name="cep" id="cep" oninput="mascara_cep()" maxlength="9">
                 <p></p>
             </div>
             <div>
@@ -108,12 +108,12 @@ if(isset($_POST["Voltar"])){
               
             <div class="SubContainer">
                 <p>E-mail:</p>
-                <input type="text" name="" id="Email">
+                <input type="text" name="Email" id="Email">
                 <p></p>
             </div>
             <div class="SubContainer">
                 <p>Senha:</p>
-                <input type="text" name="" id="">
+                <input type="text" name="senha" id="senha">
                 <p></p>
             </div>
             <div>

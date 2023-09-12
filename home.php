@@ -52,6 +52,7 @@ if(isset($_POST["Medicamentos"])){
                     <input type="submit" value="Cadastrar Aliado" name="CadastrarAliado" class="sub" >
                     <input type="submit" value="Alterar Dados" name="AlterarDados"class="sub">
                     <input type="submit" value="Cadastrar Medicamentos" name="Medicamentos" class="sub">
+                    <input type="submit" value="Cadastrar Alarme" name="alarme" class="sub">
                 </div>
             </div>
         </form>

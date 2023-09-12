@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Digital Clock</title>
-    <link href="./styles.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm Clock</title>
+</head>
+<body>
     <div class="container">
-      <div class="clock"></div>
+        <h1>Alarm Clock</h1>
+        <div class="alarm-form">
+            <label for="alarm-time">Defina o horário do alarme:</label>
+            <input type="time" id="alarm-time">
+            <button onclick="setAlarm()">Definir Alarme</button>
+        </div>
     </div>
-
-    <script src="alarme.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>

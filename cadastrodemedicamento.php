@@ -5,7 +5,7 @@ require_once "./conexao.php";
 $medicacao = $database->Medicamentos;
 
 $usuario_dono = $_POST['usuario'];
-$medicameto = $_POST['NomeMedicamento'];
+$medicamento = $_POST['NomeMedicamento'];
 $quantidade = $_POST['quantidade'];
 $horario = $_POST['horario'];
 $descricao = $_POST['descricao'];
@@ -15,7 +15,7 @@ $quantidadedecomprimidos = $_POST['quantidadeComprimidos'];
 $medicamentos_local = $medicacao->insertOne(
     [
         "usuario_dono" => $usuario_dono,
-        "medicamento" => $medicamento,
+        "NomeMedicamento" => $medicamento,
         "quantidade" => $quantidade,
         "horario" => $horario,
         "descricao" => $descricao,
@@ -24,11 +24,7 @@ $medicamentos_local = $medicacao->insertOne(
     ]
 );
 
-//header("Location: /home.php");
+header("Location: /home.php");
 
 
-echo $usuario_dono;
-echo $medicamento;
-echo $quantidadedecomprimidos;
-echo $descricao;
 
