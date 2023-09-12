@@ -12,6 +12,12 @@ if(isset($_POST["Medicamentos"])){
 if(isset($_POST["alarme"])){
     header("Location: alarme.php");
 }
+if(isset($_POST["remediostabela"])){
+    header("Location: tabelaremedio.php");
+}
+if(isset($_POST["update"])){
+    header("Location: menu.php");
+}
 
 ?>
 <!DOCTYPE html>
@@ -57,6 +63,8 @@ if(isset($_POST["alarme"])){
                     <input type="submit" value="Alterar Dados" name="AlterarDados"class="sub">
                     <input type="submit" value="Cadastrar Medicamentos" name="Medicamentos" class="sub">
                     <input type="submit" value="Cadastrar Alarme" name="alarme" class="sub">
+                    <input type="submit" value="Alterar dados" name="update" class="sub">
+                    <input type="submit" value="Tabela de remedios" name="remediostabela" class="sub">
                 </div>
             </div>
         </form>
