@@ -9,6 +9,10 @@ if(isset($_POST["CadastrarAliado"])){
 if(isset($_POST["Medicamentos"])){
     header("Location: CadastroRemedio.php");
 }
+if(isset($_POST["alarme"])){
+    header("Location: alarme.php");
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
