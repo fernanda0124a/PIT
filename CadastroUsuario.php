@@ -1,7 +1,7 @@
 <?php
 ini_set('default_charset', 'utf-8');
 if (isset($_POST["Voltar"])) {
-    header("Location: index.html");
+    header("Location: index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -49,7 +49,7 @@ if (isset($_POST["Voltar"])) {
             </div>
             <div class="SubContainer">
                 <p>Nome Completo:</p>
-                <input type="text" name="nome" id="nome">
+                <input type="text" required name="nome" id="nome">
                 <p></p>
             </div>
             <div id="ParteInformacoes">
@@ -67,26 +67,26 @@ if (isset($_POST["Voltar"])) {
                     <img src="IMG/Celular.png" id="ImgCell">
                 </div>
                 <div id="InfotxtCpf">
-                    <input type="text" name="cpf" id="Cpf" oninput="mascara_CPF()" maxlength="14">
+                    <input type="text" required name="cpf" id="Cpf" oninput="mascara_CPF()" maxlength="14">
                     <p></p>
                 </div>
                 <div id="InfotxtDTN">
-                    <input type="date" name="Data" id="Data">
+                    <input type="date" required name="Data" id="Data">
                     <p></p>
                 </div>
                 <div id="InfotxtCell">
-                    <input type="text" name="Celular" id="Cell" oninput="mascara_Cell()" maxlength="14">
+                    <input type="text" required name="Celular" id="Cell" oninput="mascara_Cell()" maxlength="14">
                     <p></p>
                 </div>
             </div>
             <div class="SubContainer">
                 <p>Cep:</p>
-                <input type="text" name="" id="cep" oninput="mascara_cep()" maxlength="9">
+                <input type="text" required name="" id="cep" oninput="mascara_cep()" maxlength="9">
                 <p></p>
             </div>
             <div>
                 <p>Nos conte o que você tem: </p>
-                <textarea name="" id="" cols="70" rows="2" style="resize: none; border-radius: 10px; width: 96%; margin-left: 2%;"></textarea>
+                <textarea name="" required id="" cols="70" rows="2" style="resize: none; border-radius: 10px; width: 96%; margin-left: 2%;"></textarea>
             </div>
             <div>
                 <p id="PerguntaPronome">Como podemos te chamar:</p>
@@ -100,12 +100,12 @@ if (isset($_POST["Voltar"])) {
             </div>
             <div class="SubContainer">
                 <p>E-mail:</p>
-                <input type="text" name="email" id="email">
+                <input type="text" required name="email" id="email">
                 <p></p>
             </div>
             <div class="SubContainer">
                 <p>Senha:</p>
-                <input type="password" name="password" id="password">
+                <input type="password" required name="password" id="password">
                 <p></p>
             </div>
             <div>
@@ -131,10 +131,12 @@ if (isset($_POST["Voltar"])) {
             </ul>
         </div>
         <div id="IconsFoot">
-            <img src="IMG/Twitter.png" id="IconTwitter">
-            <img src="IMG/Pinterest.png" id="IconPinterest">
-            <img src="IMG/TikTok.png" id="IconTikTok">
-            <img src="IMG/Instagram.png" id="IconInsta">
+            <div id="ImgFoot">
+                <img src="IMG/Twitter.png" id="IconTwitter">
+                <img src="IMG/Pinterest.png" id="IconPinterest">
+                <img src="IMG/TikTok.png" id="IconTikTok">
+                <img src="IMG/Instagram.png" id="IconInsta">
+            </div>
         </div>
     </footer>
 

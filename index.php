@@ -1,7 +1,12 @@
-<?php 
-if(isset($_POST["Entrar"])){
+<?php
+if (isset($_POST["Entrar"])) {
     header("Location: login.php");
 }
+if (isset($_POST["Cadastrar"])) {
+    header("Location: CadastroUsuario.php");
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,10 +30,6 @@ if(isset($_POST["Entrar"])){
                 <h1>Medique-se</h1>
                 <h1 id="Lado">BEM</h1>
             </div>
-            <div id="Imagens">
-                <img id="Medicamento1" src="IMG/Medicamentos2.png">
-                <img id="Medicamento2" src="IMG/Remedios.png">
-            </div>
         </div>
         <div id="Pesquisa">
             <input type="search" name="" id="BarraPesquisa">
@@ -36,21 +37,13 @@ if(isset($_POST["Entrar"])){
         </div>
         <form method="post">
             <input type="submit" id="Voltar" value="Entrar" name="Entrar">
-            <input type="submit" id="Voltar" value="Cadastrar" onclick= "Entrarcadastro()">
+            <input type="submit" id="Voltar" value="Cadastrar" onclick="Entrarcadastro()" name="Cadastrar">
         </form>
     </header>
 
     <main>
         <div id="ContainerP1">
-            <div>
-                <img src="IMG/PilulasRemedios.png" id="PilulasRemedios">
-            </div>
-            <div id="Texto1">
-                <h1>OTIMIZE A SUA ROTINA</h1>
-            </div>
-            <div>
-                <img src="IMG/MulherRemedio.png" id="MulherRemedio">
-            </div>
+            <img src="IMG/IMG/Otimize_rotina.png" id="Otimize">
         </div>
         <div id="ContainerP2">
             <div>
@@ -61,18 +54,18 @@ if(isset($_POST["Entrar"])){
                     <a href="#" id="AcesseApp_a">Acesse o app</a>
                 </div>
                 <div id="InfoApp">
-                    <h1>Baixe o nosso app, para ter um controle efetivo de seus medicamentos. 
+                    <h1>Baixe o nosso app, para ter um controle efetivo de seus medicamentos.
                         Com ele podemos te ajudar com sua rotina. </h1>
                 </div>
             </div>
         </div>
         <div>
-            <img src="IMG/Medique_se_bem.png" id="ImgMedique">
+            <img src="IMG/IMG/Medique_se_bem2.png" id="ImgMedique">
         </div>
         <div id="InfoNos">
             <h1>SOBRE NÓS</h1>
-            <h1>Um grupo escolar, que decidiu pesquisar mais sobre a 
-                rotina de medicamentos das pessoas, e apartir de estudos criaram o MEDIQUE-SE BEM,  pensando nesta ideia desde o zero. percorrem uma jornada 
+            <h1>Um grupo escolar, que decidiu pesquisar mais sobre a
+                rotina de medicamentos das pessoas, e apartir de estudos criaram o MEDIQUE-SE BEM, pensando nesta ideia desde o zero. percorrem uma jornada
                 até chegar em cada pessoa, e fazer a diferença em sua vida.</h1>
         </div>
         <div id="ContainerP3">
@@ -80,14 +73,14 @@ if(isset($_POST["Entrar"])){
             <div id="BarraAzul"></div>
         </div>
         <div id="ContainerP4">
-            <div id="BarraAzul2"></div>
-            <h1>MEDIQUE-SE BEM, foi criado para auxilar a todos em suas rotina, 
-                até quem não toma medicamentos pode utilizar de nossos recursos para organizar sua “rotina medica”. desenvolvemos recursos para que você tenha 
-                todo o seu percurso medico salvo e seguro com si, e organizao. </h1>
-                <div>
-                    <img src="IMG/IdosaRemedio.png" id="IdosaRemedio">
-                    <img src="IMG/CriancaAdolescenteRemedio.png" id="CriancaAdolescenteRemedio">
-                </div>
+            <div id="Barracinza">
+                <h1>MEDIQUE-SE BEM, foi criado para auxilar a todos em suas rotina,
+                    até quem não toma medicamentos pode utilizar de nossos recursos para organizar sua “rotina medica”. desenvolvemos recursos para que você tenha
+                    todo o seu percurso medico salvo e seguro com si, e organizao. </h1>
+            </div>
+            <div>
+                <img src="IMG/IdosaRemedio.png" id="IdosaRemedio">
+            </div>
         </div>
     </main>
     <footer>
@@ -108,18 +101,21 @@ if(isset($_POST["Entrar"])){
             </ul>
         </div>
         <div id="IconsFoot">
-            <img src="IMG/Twitter.png" id="IconTwitter">
-            <img src="IMG/Pinterest.png" id="IconPinterest">
-            <img src="IMG/TikTok.png" id="IconTikTok">
-            <img src="IMG/Instagram.png" id="IconInsta">
+            <div id="ImgFoot">
+                <img src="IMG/Twitter.png" id="IconTwitter">
+                <img src="IMG/Pinterest.png" id="IconPinterest">
+                <img src="IMG/TikTok.png" id="IconTikTok">
+                <img src="IMG/Instagram.png" id="IconInsta">
+            </div>
         </div>
     </footer>
 
 
-<script>
-function Entrarcadastro(){
-    document.getElementById("demo").innerHTML = "Hello World";
-}
-</script>
+    <script>
+        function Entrarcadastro() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+    </script>
 </body>
+
 </html>

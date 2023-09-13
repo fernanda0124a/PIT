@@ -1,3 +1,12 @@
+<?php
+ini_set('default_charset', 'utf-8');
+
+if(isset($_POST["Menu"])){
+    header("Location: menu.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,7 +35,7 @@
             <img id="Lupa" src="IMG/LupaPesquisa.png">
         </div>
         <form method="post">
-            <input type="submit" value="Menu" id="Menu">
+            <input type="submit" value="Menu" id="Menu" name="Menu">
         </form>
     </header>
 

@@ -37,7 +37,7 @@ if(isset($_POST["Voltar"])){
     </header>
     <main>
         <div id="MainP1">
-            <form method="post" id="Form">
+            <form method="post" id="Form" action="alterardados.php">
                 <div>
                     <img src="IMG/Perfil_Usuario.png" id="ImgAvatar">
                     <h2 id="Acessar">Alterar Dados do Usuário</h2>
@@ -62,26 +62,26 @@ if(isset($_POST["Voltar"])){
                         <img src="IMG/Celular.png" id="ImgCell">
                     </div>
                     <div id="InfotxtCpf">
-                        <input type="text" name="CPF" id="Cpf" oninput="mascara_CPF()" maxlength="14">
+                        <input type="text" required ="cpf" id="cpf" oninput="mascara_CPF()" maxlength="14">
                         <p></p>
                     </div>
                     <div id="InfotxtDTN">
-                        <input type="date" name="Data" id="Data">
+                        <input type="date" name="data_de_nascimento" id="Data">
                         <p></p>
                     </div>
                     <div id="InfotxtCell">
-                        <input type="text" name="Celular" id="Cell" oninput="mascara_Cell()" maxlength="14">
+                        <input type="text" name="telefone" id="telefone" oninput="mascara_Cell()" maxlength="14">
                         <p></p>
                     </div>
                 </div>
                 <div class="SubContainer">
                     <p>Cep:</p>
-                    <input type="text" name="" id="cep" oninput="mascara_cep()" maxlength="9">
+                    <input type="text" name="cep" id="cep" oninput="mascara_cep()" maxlength="9">
                     <p></p>
                 </div>
                 <div>
                     <p>Nos conte o que você tem: </p>
-                    <textarea name="" id="" cols="70" rows="2"
+                    <textarea name="descreicao" id="descricao" cols="70" rows="2"
                         style="resize: none; border-radius: 10px; width: 96%; margin-left: 2%;"></textarea>
                 </div>
                 <div>
@@ -96,12 +96,12 @@ if(isset($_POST["Voltar"])){
                 </div>
                 <div class="SubContainer">
                     <p>E-mail:</p>
-                    <input type="text" name="" id="Email">
+                    <input type="text" name="email" id="Email">
                     <p></p>
                 </div>
                 <div class="SubContainer">
                     <p>Senha:</p>
-                    <input type="text" name="" id="">
+                    <input type="text" name="password" id="password">
                     <p></p>
                 </div>
                 <div>
@@ -110,7 +110,7 @@ if(isset($_POST["Voltar"])){
             </form>
         </div>
         <div id="MainP2">
-            <form method="post" id="Form2">
+            <form method="post" id="Form2" action="alterarremedios.php">
                 <div>
                     <img src="IMG/RemedioCadastro.png" id="ImgAvatar2">
                     <h2 id="Acessar">Alterar Dados do Remédios</h2>
@@ -144,7 +144,7 @@ if(isset($_POST["Voltar"])){
                 </div>
                 <div class="SubContainer">
                     <p>NOME DO MEDICAMENTO:</p>
-                    <input type="text" name="NomeMedicamento" id="NomeMedicamento">
+                    <input type="text" required name="NomeMedicamento" id="NomeMedicamento">
                     <p></p>
                 </div>
                 <div class="SubContainer">

@@ -1,3 +1,25 @@
+<?php
+ini_set('default_charset', 'utf-8');
+$nome_usuario = "Usuario Principal";
+
+if(isset($_POST["CadastrarAliado"])){
+    header("Location: CadastroAliado.php");
+}
+
+if(isset($_POST["Medicamentos"])){
+    header("Location: CadastroRemedio.php");
+}
+if(isset($_POST["alarme"])){
+    header("Location: alarme.php");
+}
+if(isset($_POST["remediostabela"])){
+    header("Location: tabelaremedio.php");
+}
+if(isset($_POST["update"])){
+    header("Location: menu.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -37,9 +59,11 @@
                     </p>
                 </button>
                 <div class="dropdown-content">
-                    <input type="submit" value="Cadastrar Aliado" name="Cadastrar" class="sub">
-                    <input type="submit" value="Alterar Dados" name="AlterarDados" class="sub">
+                <input type="submit" value="Cadastrar Aliado" name="CadastrarAliado" class="sub" >
                     <input type="submit" value="Cadastrar Medicamentos" name="Medicamentos" class="sub">
+                    <input type="submit" value="Cadastrar Alarme" name="alarme" class="sub">
+                    <input type="submit" value="Alterar dados" name="update" class="sub">
+                    <input type="submit" value="Tabela de remedios" name="remediostabela" class="sub">
                 </div>
             </div>
         </form>
@@ -140,10 +164,12 @@
             </ul>
         </div>
         <div id="IconsFoot">
-            <img src="IMG/Twitter.png" id="IconTwitter">
-            <img src="IMG/Pinterest.png" id="IconPinterest">
-            <img src="IMG/TikTok.png" id="IconTikTok">
-            <img src="IMG/Instagram.png" id="IconInsta">
+            <div id="ImgFoot">
+                <img src="IMG/Twitter.png" id="IconTwitter">
+                <img src="IMG/Pinterest.png" id="IconPinterest">
+                <img src="IMG/TikTok.png" id="IconTikTok">
+                <img src="IMG/Instagram.png" id="IconInsta">
+            </div>
         </div>
     </footer>
 </body>

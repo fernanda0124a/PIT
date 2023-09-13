@@ -42,10 +42,6 @@ if(isset($_POST["update"])){
                 <h1>Medique-se</h1>
                 <h1 id="Lado">BEM</h1>
             </div>
-            <div id="Imagens">
-                <img id="Medicamento1" src="IMG/Medicamentos2.png">
-                <img id="Medicamento2" src="IMG/Remedios.png">
-            </div>
         </div>
         <div id="Pesquisa">
             <input type="search" name="" id="BarraPesquisa">
@@ -60,7 +56,6 @@ if(isset($_POST["update"])){
                 </button>
                 <div class="dropdown-content">
                     <input type="submit" value="Cadastrar Aliado" name="CadastrarAliado" class="sub" >
-                    <input type="submit" value="Alterar Dados" name="AlterarDados"class="sub">
                     <input type="submit" value="Cadastrar Medicamentos" name="Medicamentos" class="sub">
                     <input type="submit" value="Cadastrar Alarme" name="alarme" class="sub">
                     <input type="submit" value="Alterar dados" name="update" class="sub">
@@ -112,10 +107,12 @@ if(isset($_POST["update"])){
             </ul>
         </div>
         <div id="IconsFoot">
-            <img src="IMG/Twitter.png" id="IconTwitter">
-            <img src="IMG/Pinterest.png" id="IconPinterest">
-            <img src="IMG/TikTok.png" id="IconTikTok">
-            <img src="IMG/Instagram.png" id="IconInsta">
+            <div id="ImgFoot">
+                <img src="IMG/Twitter.png" id="IconTwitter">
+                <img src="IMG/Pinterest.png" id="IconPinterest">
+                <img src="IMG/TikTok.png" id="IconTikTok">
+                <img src="IMG/Instagram.png" id="IconInsta">
+            </div>
         </div>
     </footer>
 </body>

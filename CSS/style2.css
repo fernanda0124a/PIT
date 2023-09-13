@@ -37,24 +37,6 @@ header {
     font-weight: bold;
 }
 
-#Imagens {
-    width: 100px;
-    height: 100px;
-    margin-top: -116px;
-    margin-left: 230px;
-}
-
-#Medicamento1 {
-    width: 140px;
-}
-
-#Medicamento2 {
-    width: 80px;
-    position: absolute;
-    margin-top: -138px;
-    margin-left: 70px;
-}
-
 #Pesquisa {
     width: 100%;
     display: flex;
@@ -224,40 +206,44 @@ footer {
     background-color: #FFFFFF;
 }
 
+
 #IconsFoot {
     display: flex;
     margin-left: auto;
     align-items: flex-start;
 }
 
-#IconsFoot img {
-    margin-top: 10px;
+#ImgFoot {
+    display: grid;
+    width: 200px;
+    grid-template-rows: 0.4fr 0.4fr;
+    grid-template-columns: 0.4fr 0.4fr;
+    grid-template-areas:
+        "Twitter TikTok"
+        "Pinterest Insta";
+    grid-gap: 5px;
 }
 
 #IconInsta {
     width: 50px;
     height: 40px;
-    position: relative;
-    top: 20px;
+    grid-area: Insta;
 }
 
 #IconTikTok {
-    width: 70px;
+    width: 46px;
     height: 40px;
-    position: relative;
-    top: -24px;
+    grid-area: TikTok;
 }
 
 #IconPinterest {
     width: 60px;
     height: 40px;
-    position: relative;
-    top: 20px;
+    grid-area: Pinterest;
 }
 
 #IconTwitter {
-    width: 80px;
+    width: 60px;
     height: 40px;
-    position: relative;
-    top: -24px;
+    grid-area: Twitter;
 }

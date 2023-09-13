@@ -37,23 +37,6 @@ header {
     font-weight: bold;
 }
 
-#Imagens {
-    width: 100px;
-    height: 100px;
-    margin-top: -116px;
-    margin-left: 230px;
-}
-
-#Medicamento1 {
-    width: 140px;
-}
-
-#Medicamento2 {
-    width: 80px;
-    position: absolute;
-    margin-top: -138px;
-    margin-left: 70px;
-}
 
 #Pesquisa {
     width: 100%;
@@ -76,8 +59,10 @@ header {
     width: 60px;
     height: 60px;
 }
-
-#Voltar {
+#Form{
+    margin-top: 12%;
+}
+.Voltar {
     background: transparent;
     border: none;
     color: #2EAD97;
@@ -85,48 +70,43 @@ header {
     font-weight: bold;
     margin-left: 10%;
     margin-top: 10%;
+    text-decoration: none;
 }
+
 main {
     background-color: #2E2E2E;
     color: white;
     display: flex;
     flex-direction: column;
 }
-#ContainerP1{
-    background-color: #D9D9D9;
-    display: flex;
-    color: #5F5252;
+
+#ContainerP1 {
     width: 100%;
     height: 300px;
     align-items: center;
     text-align: center;
     margin-top: 20px;
 }
-#PilulasRemedios{
-    width: 400px;
-    height: 300px;
+
+#Otimize {
+    width: 100%;
 }
-#Texto1{
-    margin-left: 16%;
-}
-#MulherRemedio{
-    width: 400px;
-    height: 300px;
-    margin-left: 98.8%;
-    margin-right: 0px;
-    margin-top: 4px;
-}
-#ContainerP2{
+
+#ContainerP2 {
     display: flex;
     width: 80%;
     margin-left: 10%;
     gap: 20px;
     margin-bottom: 6%;
+    margin-top: 10%;
 }
-#ImgApk{
+
+#ImgApk {
     width: 300px;
+    height: 300px;
 }
-#AcesseApp{
+
+#AcesseApp {
     margin-top: 20px;
     width: 140px;
     padding: 20px;
@@ -134,27 +114,31 @@ main {
     margin-left: 40%;
     margin-bottom: 10px;
 }
-#AcesseApp_a{
+
+#AcesseApp_a {
     text-decoration: none;
     color: white;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
 }
-#InfoApp{
+
+#InfoApp {
     font-size: 20px;
     font-weight: bold;
     width: 840px;
     height: 200px;
     text-align: center;
 }
-#ImgMedique{
+
+#ImgMedique {
     width: 80%;
     height: 300px;
     margin-left: 10%;
     margin-bottom: 6%;
 }
-#InfoNos{
+
+#InfoNos {
     width: 68%;
     margin-left: 18%;
     gap: 20px;
@@ -163,44 +147,48 @@ main {
     text-align: center;
     margin-bottom: 10%;
 }
-#ContainerP3 h1{
+
+#Nos {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#ContainerP3 h1 {
     font-size: 50px;
     z-index: 1;
     text-align: center;
 }
-#BarraAzul{
+
+#BarraAzul {
     width: 80%;
     height: 30px;
     background-color: #2D9CBF;
     z-index: -1;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
     margin-top: -25px;
     margin-left: 10%;
 }
-#ContainerP4 h1{
-    margin-top: -39%;
-    margin-left: 12%;
-    width: 20%;
+
+#ContainerP4 h1 {
     font-size: 36px;
     text-align: center;
+    margin-top: 20px;
+    padding: 5%;
+    color: #E8CECE;
 }
-#BarraAzul2{
-    width: 100px;
-    height: 750px;
-    background-color: #2D9CBF;
-    z-index: -1;
-    margin-left: 10%;
+
+#Barracinza {
+    width: 800px;
+    height: 450px;
+    background-color: #385D69;
+    margin-left: 30%;
+    margin-bottom: 10px;
 }
-#IdosaRemedio{
+
+#IdosaRemedio {
     width: 600px;
-    margin-left: 40%;
-    margin-top: -20%;
 }
-#CriancaAdolescenteRemedio{
-    width: 600px;
-    margin-top: -60%;
-    margin-left: 67.69%;
-}
+
 footer {
     display: flex;
     align-items: center;
@@ -231,34 +219,43 @@ footer {
     align-items: flex-start;
 }
 
-#IconsFoot img {
-    margin-top: 10px;
+#IconsFoot {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-start;
+}
+
+#ImgFoot {
+    display: grid;
+    width: 200px;
+    grid-template-rows: 0.4fr 0.4fr;
+    grid-template-columns: 0.4fr 0.4fr;
+    grid-template-areas:
+        "Twitter TikTok"
+        "Pinterest Insta";
+    grid-gap: 5px;
 }
 
 #IconInsta {
     width: 50px;
     height: 40px;
-    position: relative;
-    top: 20px;
+    grid-area: Insta;
 }
 
 #IconTikTok {
-    width: 70px;
+    width: 46px;
     height: 40px;
-    position: relative;
-    top: -24px;
+    grid-area: TikTok;
 }
 
 #IconPinterest {
     width: 60px;
     height: 40px;
-    position: relative;
-    top: 20px;
+    grid-area: Pinterest;
 }
 
 #IconTwitter {
-    width: 80px;
+    width: 60px;
     height: 40px;
-    position: relative;
-    top: -24px;
+    grid-area: Twitter;
 }

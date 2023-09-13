@@ -112,10 +112,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
         </div>
         <div id="IconsFoot">
-            <img src="IMG/Twitter.png" id="IconTwitter">
-            <img src="IMG/Pinterest.png" id="IconPinterest">
-            <img src="IMG/TikTok.png" id="IconTikTok">
-            <img src="IMG/Instagram.png" id="IconInsta">
+            <div id="ImgFoot">
+                <img src="IMG/Twitter.png" id="IconTwitter">
+                <img src="IMG/Pinterest.png" id="IconPinterest">
+                <img src="IMG/TikTok.png" id="IconTikTok">
+                <img src="IMG/Instagram.png" id="IconInsta">
+            </div>
         </div>
     </footer>
 </body>

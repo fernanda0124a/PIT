@@ -204,7 +204,6 @@ footer {
 #Links li {
     margin-right: 40px;
     margin-left: 10px;
-    background-color: #DCDCDC;
 }
 
 #Links a {
@@ -219,125 +218,37 @@ footer {
     align-items: flex-start;
 }
 
-#IconsFoot img {
-    margin-top: 10px;
+#ImgFoot {
+    display: grid;
+    width: 200px;
+    grid-template-rows: 0.4fr 0.4fr;
+    grid-template-columns: 0.4fr 0.4fr;
+    grid-template-areas:
+        "Twitter TikTok"
+        "Pinterest Insta";
+    grid-gap: 5px;
 }
 
 #IconInsta {
     width: 50px;
     height: 40px;
-    position: relative;
-    top: 20px;
+    grid-area: Insta;
 }
 
 #IconTikTok {
-    width: 70px;
+    width: 46px;
     height: 40px;
-    position: relative;
-    top: -24px;
+    grid-area: TikTok;
 }
 
 #IconPinterest {
     width: 60px;
     height: 40px;
-    position: relative;
-    top: 20px;
+    grid-area: Pinterest;
 }
 
 #IconTwitter {
-    width: 80px;
+    width: 60px;
     height: 40px;
-    position: relative;
-    top: -24px;
-}
-@media (max-width: 600px) {
-    header {
-        width: 600px;
-        grid-template-areas: "Parte1 Parte2 Parte3";
-        grid-template-columns: 0.5fr 1fr 0.5fr;
-        grid-template-rows: auto auto auto;
-    }
-
-    #ImgAvatar {
-        width: 150px;
-        height: 100px;
-    }
-    #Voltar{
-        margin: 0;
-    }
-    #Part1 {
-        grid-area: Parte1;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    #Imagens {
-        display: none;
-    }
-
-    #LogoTipo {
-        justify-content: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    #Lado {
-        display: none;
-    }
-
-    #Pesquisa {
-        grid-area: Parte2;
-        justify-content: center;
-    }
-
-    #BarraPesquisa {
-        width: 60%;
-    }
-
-    #Lupa {
-        margin-left: 10px;
-    }
-
-    main {
-        width: 600px;
-    }
-
-    footer {
-        width: 600px;
-        display: flex;
-    }
-
-    #IconsFoot {
-        width: 30%;
-        margin-left: 0;
-    }
-
-    #IconInsta {
-        width: 30px;
-        height: 20px;
-    }
-
-    #IconTikTok {
-        width: 50px;
-        height: 20px;
-    }
-
-    #IconPinterest {
-        width: 40px;
-        height: 20px;
-    }
-
-    #IconTwitter {
-        width: 40px;
-        height: 20px;
-    }
-    #Links{
-        width: 60%;
-    }
-
-    #Links li {
-        margin-right: 20px;
-        margin-left: 0;
-        background-color: #DCDCDC;
-    }
+    grid-area: Twitter;
 }
